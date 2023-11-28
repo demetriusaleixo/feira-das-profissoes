@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* GERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgba(255, 0, 0, 0.466);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .botao button {
+    padding: 10px 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+header .botao button:hover {
+    box-shadow: 0px 0px 8px red;
+}
+
+/* TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+font-size: 3em;
+}
+
+.topo-do-site .txt-topo-site p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* SOBRE O CURSO */
+
