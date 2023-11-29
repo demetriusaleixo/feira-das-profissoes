@@ -1,0 +1,5 @@
+.topo-do-site .txt-topo-site p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 40px 0px;
+}

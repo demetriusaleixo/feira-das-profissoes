@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Revolin';
+    src: url('../fontes/Revolin-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Galvanizer';
+    src: url('../fontes/Galvanizer-Bold.otf') format('opentype'), url('../fontes/Galvanizer-Bold.ttf') format('truetype');
+}
+
 /* GERAL */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -22,6 +31,23 @@ body {
     display: flex;
 }
 
+h1, h2, h3 {
+    font-family: 'Revolin', sans-serif;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 15px 0px;
+}
+
+p {
+    font-family: 'Galvanizer', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    margin: 40px 0px;
+    line-height: 30px;
+}
+
 h2.titulo {
     font-size: 2.5em;
     text-align: center;
@@ -30,7 +56,9 @@ h2.titulo {
 
 /* CABEÇALHO */
 header {
-    padding: 40px 4%;
+    background: #222222;
+    padding: 20px 4%;
+    height: 150px;
 }
 
 header > .interface {
@@ -41,12 +69,13 @@ header > .interface {
 
 header a {
     display: inline-block;
-    color: black;
+    font-size: 1.1em;
+    color: white;
     text-decoration: none;
 }
 
 header a:hover {
-    color: rgba(255, 0, 0, 0.466);
+    color: red;
     transform: scale(1.1);
     transition: 0.2s;
 }
@@ -65,6 +94,7 @@ header .botao button {
     font-size: 1.2em;
     font-weight: 600;
     background-color: red;
+    color: white;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -89,12 +119,6 @@ section.topo-do-site .flex {
 font-size: 3em;
 }
 
-.topo-do-site .txt-topo-site p {
-    font-size: 1.2em;
-    text-align: justify;
-    margin: 40px 0px;
-}
-
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -112,3 +136,19 @@ font-size: 3em;
 
 /* SOBRE O CURSO */
 
+/* CONTEÚDOS */
+section.conteudos {
+    padding: 40px 4%;
+}
+
+.conteudos .conteudos-box {
+    padding: 40px;
+}
+
+.conteudos .conteudos-box i {
+    font-size: 70px;
+}
+
+.dif {
+    margin: 22px 0px;
+}
