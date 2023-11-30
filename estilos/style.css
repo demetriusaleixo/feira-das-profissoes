@@ -17,8 +17,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    
     height: 100vh;
 }
 
@@ -59,6 +62,8 @@ header {
     background: #222222;
     padding: 20px 4%;
     height: 150px;
+    width: 100%;
+    
 }
 
 header > .interface {
@@ -75,7 +80,7 @@ header a {
 }
 
 header a:hover {
-    color: red;
+    color: #DD0613;
     transform: scale(1.1);
     transition: 0.2s;
 }
@@ -93,7 +98,7 @@ header .botao button {
     padding: 10px 40px;
     font-size: 1.2em;
     font-weight: 600;
-    background-color: red;
+    background-color: #DD0613;
     color: white;
     border: none;
     border-radius: 25px;
@@ -101,7 +106,7 @@ header .botao button {
 }
 
 header .botao button:hover {
-    box-shadow: 0px 0px 8px red;
+    box-shadow: 0px 0px 8px #DD0613;
 }
 
 /* TOPO DO SITE */
@@ -141,12 +146,25 @@ section.conteudos {
     padding: 40px 4%;
 }
 
+section.conteudos .flex {
+    gap: 60px;
+}
+
 .conteudos .conteudos-box {
     padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.conteudos .conteudos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #dd0614a4;
 }
 
 .conteudos .conteudos-box i {
     font-size: 70px;
+    color: #DD0613;
 }
 
 .dif {
