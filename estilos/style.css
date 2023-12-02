@@ -54,7 +54,7 @@ p {
 h2.titulo {
     font-size: 2.5em;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 /* CABEÇALHO */
@@ -159,7 +159,7 @@ section.conteudos .flex {
 
 .conteudos .conteudos-box:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px #dd0614a4;
+    box-shadow: 0px 0px 20px red;
 }
 
 .conteudos .conteudos-box i {
@@ -169,4 +169,48 @@ section.conteudos .flex {
 
 .dif {
     margin: 22px 0px;
+}
+
+/* MEDIA QUERY MOBILE */
+
+@media screen and (max-width: 1305px) {
+    /* CABEÇALHO */
+    .menu-d, .botao {
+        display: none;
+    }
+
+    /* GERAL */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* IMAGEM */
+    .topo-do-site .img-topo-site img {
+        animation: none;
+        width: 100%;
+    }
+
+    /* TEXTOS */
+    h1 {
+        text-align: center;
+    }
+
+    h2.titulo {
+        font-size: 2.2em;
+        margin-top: 10px;
+    }
+
+    p {
+        padding: 0px 20px;
+    }
+
+    /* CAIXAS */
+    .conteudos .conteudos-box {
+        border: 1px solid red;
+    }
+
+    .conteudos .conteudos-box:hover {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px;
+    }
 }
