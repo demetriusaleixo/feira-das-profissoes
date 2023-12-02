@@ -89,7 +89,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li {
+header nav.menu-d ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -107,6 +107,16 @@ header .botao button {
 
 header .botao button:hover {
     box-shadow: 0px 0px 8px #DD0613;
+}
+
+/* MENU MOBILE NO DESKTOP */
+
+.menu-m {
+   display: none;
+}
+
+.btn-abrir-menu i {
+    display: none;
 }
 
 /* TOPO DO SITE */
@@ -212,5 +222,70 @@ section.conteudos .flex {
     .conteudos .conteudos-box:hover {
         transform: scale(1);
         box-shadow: 0px 0px 0px;
+    }
+
+    /* MENU MOBILE NO MOBILE */
+
+    .btn-abrir-menu i {
+        display: inline;
+        color: red;
+        font-size: 40px;
+    }
+
+    .menu-m {
+        display: inline;
+        position: fixed;
+        background: gray;
+        height: 100vh;
+        width: 0%;
+        top: 0px;
+        right: 0px;
+        z-index: 99999;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .menu-m.abrir-menu {
+        width: 60%;
+    }
+
+    menu-m.abrir-menu ~ .overlay-menu {
+        display: block;
+    }
+
+    .menu-m .btn-fechar {
+        padding: 20px 4%;
+    }
+
+    .menu-m .btn-fechar i {
+        color: red;
+        font-size: 30px;
+    }
+
+    .menu-m nav ul {
+        text-align: right;
+    }
+
+    .menu-m nav ul li a {
+        color: white;
+        font-size: 1.4em;
+        font-weight: 300;
+        padding: 10px 8%;
+        display: block;
+    }
+
+    .menu-m nav ul li a:hover {
+        background: red;
+    }
+
+    .overlay-menu {
+        position: fixed;
+        display: none;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.438);
+        width: 100%;
+        height: 100%;
+        z-index: 88888;
     }
 }
