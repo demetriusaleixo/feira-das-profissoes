@@ -10,6 +10,21 @@
     src: url('../fontes/Galvanizer-Bold.otf') format('opentype'), url('../fontes/Galvanizer-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Darklinos';
+    src: url('../fontes/darklinos.otf') format('opentype'), url('../fontes/darklinos.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Borneox';
+    src: url('../fontes/BORNEOX.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Quixotic';
+    src: url('../fontes/Quixotic.otf') format('opentype');
+}
+
 /* GERAL */
 * {
     margin: 0px;
@@ -63,7 +78,7 @@ header {
     padding: 20px 4%;
     height: 150px;
     width: 100%;
-    
+    border-bottom: 2px solid red;
 }
 
 header > .interface {
@@ -74,7 +89,7 @@ header > .interface {
 
 header a {
     display: inline-block;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: white;
     text-decoration: none;
 }
@@ -149,8 +164,6 @@ font-size: 3em;
     }
 }
 
-/* SOBRE O CURSO */
-
 /* CONTEÚDOS */
 section.conteudos {
     padding: 40px 4%;
@@ -179,6 +192,43 @@ section.conteudos .flex {
 
 .dif {
     margin: 22px 0px;
+}
+
+/* RODAPÉ */
+footer {
+    background: #222222;
+    border-top: 2px solid red;
+}
+
+footer h3 {
+    text-align: center;
+    color: white;
+    font-size: 2.2em;
+    padding: 5px;
+}
+
+footer p {
+    color: white;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.lado {
+    display: inline-block;
+    margin: 0px 150px;
+}
+
+.fonte1 {
+    font-family: 'Darklinos', sans-serif;
+}
+
+.fonte2 {
+    font-family: 'Borneox', sans-serif;
+}
+
+.fonte3 {
+    font-family: 'Quixotic';
 }
 
 /* MEDIA QUERY MOBILE */
